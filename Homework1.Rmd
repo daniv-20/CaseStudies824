@@ -1,0 +1,414 @@
+---
+title: "Homework 1 - Visualization"
+author: "Danielle Vaithilingam"
+date: "`r Sys.Date()`"
+output: word_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(flextable)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Homework for Visualization Session 1
+
+Read the Wikipedia entry on Edward Tufte:
+<https://en.wikipedia.org/wiki/Edward_Tufte> Likewise, the entry on
+Information Design: <https://en.wikipedia.org/wiki/Information_design>
+
+For this homework, you can use take this Word document to fill in your
+answers:
+
+Question 1. Go to current (since November) articles in Nature Digital
+Medicine. <https://www.nature.com/npjdigitalmed/> Pick three articles
+that have multiple figures that you find either interesting or
+particularly poorly done, peruse them, and rank each graphic (rank 3
+graphics per article) using a 5 point scale along these three axes: 1.
+Clarity vs obscureness 2. Simplicity vs complicated 3. Intuitive vs
+uninterpretable Include URLs to the article and to each figure: e.g.
+article: <https://www.nature.com/articles/s43856-023-00370-1> figure:
+<https://www.nature.com/articles/s43856-023-00370-1/figures/1>
+
+URL to article 1: <https://www.nature.com/articles/s41746-023-00985-7>
+
+1st URL to the article 1 graphic you are ranking:
+<https://www.nature.com/articles/s41746-023-00985-7/figures/1>
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-023-00985-7/MediaObjects/41746_2023_985_Fig1_HTML.png?as=webp)
+
+Ranking:
+
+Clarity (1) vs obscureness (5) : 2 (mostly clear with some confusing
+bits).
+
+Simplicity vs complicated : 3 (Middling complexity).
+
+Intuitive vs uninterpretable : 2 (some parts were a bit unintuitive,
+specifically the pictures to the bottom right of the grey "study" box. I
+was not immediately sure what those images were for or what part of the
+study they related to.)
+
+2nd URL to the article 1 graphic you are ranking:
+<https://www.nature.com/articles/s41746-023-00985-7/figures/2>
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-023-00985-7/MediaObjects/41746_2023_985_Fig2_HTML.png?as=webp)
+
+Ranking:
+
+Clarity vs obscureness : 1, very clear
+
+Simplicity vs complicated : 2, mostly simple
+
+Intuitive vs uninterpretable : 1, very intuitive, layout shows the
+synchronization well.
+
+3rd URL to the article 1 graphic you are ranking:
+<https://www.nature.com/articles/s41746-023-00985-7/figures/3>
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-023-00985-7/MediaObjects/41746_2023_985_Fig3_HTML.png?as=webp)
+
+Ranking:
+
+Clarity vs obscureness : 4 more obscure, specifically because it does
+not do a great job of telling us what digh01001 means and that makes the
+figure a bit more complicated.
+
+Simplicity vs complicated : 4 Definitely complicated more than simple.
+It is not immediately obvious what the dotted boxes mean and whether
+they are referring to the entire time span within the box or just the
+log represented by the red/green vertical bar. Also these shades of red
+and green are hard to discriminate for people with r/g colorblindness.
+
+Intuitive vs uninterpretable : 4 I would call this more uninterpretable
+because of the issue with the dotted line bars not being defined
+completely.
+
+URL to article 2: nature.com/articles/s41746-023-00976-8
+
+1st URL to the article 2 graphic you are ranking:
+<https://www.nature.com/articles/s41746-023-00976-8/tables/1>
+
+Ranking:
+
+Clarity vs obscureness : 2 - it is mostly clear what the table is trying
+to show
+
+Simplicity vs complicated : 1 - the table is very simple
+
+Intuitive vs uninterpretable : 4 - it is unintuitive what each heading
+encompasses (eg "initial treatment" could refer to "RFA or PEIT" only or
+to that and all following sections. )
+
+2nd URL to the article 2 graphic you are ranking:
+<https://www.nature.com/articles/s41746-023-00976-8/figures/1>
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-023-00976-8/MediaObjects/41746_2023_976_Fig1_HTML.png?as=webp)
+
+Ranking:
+
+Clarity vs obscureness : 4 - There is no y axis label, which makes it
+unclear what percentage the y axis is referring to. Also the bolded keys
+at the bottom of each graph are not a common usage so it takes a minute
+to realize what they are talking about.
+
+Simplicity vs complicated : 2 - the figure is pretty simple visually.
+
+Intuitive vs uninterpretable : 5 - the figure is hard to interpret as it
+is not immediately obvious what the percentage is referring to. From my
+knowledge of survival analysis and the title of the figure I am assuming
+it is referring to overall survival percentage, but that is not clear
+from the figure itself.
+
+3rd URL to the article 2 graphic you are ranking:
+nature.com/articles/s41746-023-00976-8/figures/2
+
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-023-00976-8/MediaObjects/41746_2023_976_Fig2_HTML.png?as=webp)
+
+Ranking:
+
+Clarity vs obscureness : 5 - It is not immediately clear with the
+simulation is simulating without digging further into the text. While
+some readers will do that, many will not so the creator should not
+assume that readers will do much more than skim the figures on a first
+read.
+
+Simplicity vs complicated : 2 - the figure itself is very simple, but
+not the most interpretable.
+
+Intuitive vs uninterpretable : 5 - The figure is difficult to interpret
+and requires a lot of thinking to know what it means.
+
+URL to article 3: <https://www.nature.com/articles/s41746-023-00991-9>
+
+1st URL to the article 3 graphic you are ranking:
+<https://www.nature.com/articles/s41746-023-00991-9/figures/1>
+
+![](images/clipboard-2849592734.png)
+
+Ranking: Clarity vs obscureness : 1 - the CONSORT diagram is very clear
+
+Simplicity vs complicated : 1 - the diagram is simple
+
+Intuitive vs uninterpretable : 1 - the diagram is commonly used and
+therefore generally easy to interpret.
+
+2nd URL to the article 3 graphic you are ranking:
+<https://www.nature.com/articles/s41746-023-00991-9/tables/1>
+
+Ranking:
+
+Clarity vs obscureness : 1 - the table is very clear, especially by
+having super-headings for each section of the table (Test group, control
+group, DLS group). Each cell in the table has at least 2 labels (row and
+column) that refer to it, making it easy to tell what the numbers in
+each cell mean.
+
+Simplicity vs complicated : 1 - a fairly simple table
+
+Intuitive vs uninterpretable : 1 - it's intuitive and well
+self-documented.
+
+3rd URL to the article 3 graphic you are ranking:
+<https://www.nature.com/articles/s41746-023-00991-9/figures/2>
+
+![](images/clipboard-3569415672.png)
+
+Ranking:
+
+Clarity vs obscureness : 3 - the bar chart is mostly clear but a y-axis
+label would have been nice to have.
+
+Simplicity vs complicated : 1 - it is a very simple graphic.
+
+Intuitive vs uninterpretable : 2 - the bar chart is pretty intuitive.
+Would be nice to have a y-axis labels
+
+Question 2. Do you think there are other ways to rank a good information
+graphic? Answer:
+
+Yes, I believe there are other ways to rank a good info-graphic. I would
+add a metric for readability (that encompasses things like font
+size/legibility and color choice, especially for colorblindness-friendly
+color choices) at the least.
+
+Question 3. Put the URLs to your three lowest ranked graphics.
+
+URLs: <https://www.nature.com/articles/s41746-023-00976-8/figures/1>
+<https://www.nature.com/articles/s41746-023-00976-8/tables/1>
+nature.com/articles/s41746-023-00976-8/figures/2
+
+Question 4. Put the URLs to your three highest ranked graphics.
+
+URLs: <https://www.nature.com/articles/s41746-023-00991-9/figures/2>
+<https://www.nature.com/articles/s41746-023-00991-9/tables/1>
+<https://www.nature.com/articles/s41746-023-00991-9/figures/1>
+
+Question 5. What distinguishes the best graphics from the worst, among
+these six examples? Answer:
+
+The best graphics are the ones that are easy to interpret without
+needing to hunt back through the text for clarification. Many people
+skim articles by reading the abstract and looking at the figures +
+legends rather than reading every piece of text immediately, so it is
+important for the figures to be at least somewhat interpretable on their
+own.
+
+Question 6. How would you improve the worst ones?
+
+Answer: I would improve the worst ones by adding back the missing axis
+labels and using indents to make it clear which sections go under each
+table "heading" and having each heading be on a clear row.
+
+Question 7. How would you improve the best ones? Answer:
+
+Even the best figures could have used a slightly more detailed caption
+and one had a missing axis label, so I would improve both of those
+things.
+
+Viewing an interactive web site. Now I would like you to go to an
+example of a genomics resource. <http://www.cbioportal.org>
+
+First select the MSK-IMPACT Clinical Sequencing Cohort (MSKCC, Nat Med
+2017) dataset.
+
+Question 8. How many samples are in the MSK-IMPACT Clinical Sequencing
+Cohort (MSKCC, Nat Med 2017) dataset? Answer: 10945 samlples
+
+Now click on ‘Query by Gene’ and enter ERBB2 in the ‘Click gene symbols
+below or enter here’ input and hit Query. After the data loads, click
+the ‘Cancer Type Summary’ tab. Mouse over, one at a time, the first six
+bars of the bar chart.
+
+Question 9. Does this barchart meet your criteria for a good graphic?
+Answer:
+
+The red/green color choice is not ideal and they could have done a
+better job of distinguishing the colors in terms of value (i.e.
+lightness/darkness) and not just hue (color identity), which can make it
+easier for people with colorblindness to tell the difference between the
+different colors.
+
+However, I would still call the barchart a good graphic because,
+assuming you can discriminate between the colored blocks, it is easy to
+interpret.
+
+Question 10. What does each bar represent?
+
+Answer: Each bar represents the cumulative alteration frequency of the
+ERBB2 gene for each type of cancer and each color block represents the
+alteration frequency of a different type of alteration (green =
+mutation, purple = structural variant, red = amplification, blue = deep
+deletion, grey = multiple alterations)
+
+Question 11. How many cases are represented under each bar? Answer:
+
+There are a different number of cases represented under each bar.
+
+| Cancer Type     | Number of Cases |
+|-----------------|-----------------|
+| Esophagogastric | 341             |
+| Ampullary       | 16              |
+| Breast          | 1337            |
+| Bladder         | 423             |
+| Small Bowel     | 35              |
+| Cervical        | 218             |
+
+: Cases per cancer type
+
+Question 12. In the case of cervical cancer, how many cases are there?
+
+Answer: 218
+
+Question 13. In the case of breast cancer, how many cases are there?
+
+Answer: 1337
+
+Question 14. Do you think the bars are equally well powered?
+
+Answer: They are not equally well powered because they have different
+sample sizes.
+
+Question 15. Can you export the data as a table? How is was it to find
+that option? (note – this is a usability question, not a visualization
+question).
+
+Answer: Yes you can! It was easy to find (right under downloads tab).
+
+Now click on the OncoPrint tab. Under the ‘Add Tracks’ menu, select
+‘Cancer Type’.
+
+Question 16. In what ways is the OncoPrint visualization better/easier
+to understand?
+
+Answer: It is easier to see the number of samples per patient.
+
+Question 17. In what ways is the OncoPrint visualization worse/harder to
+understand?
+
+Answer: The oncoprint graphic is much more complicated and there are so
+many colors it's hard to tell what is going on. This one definitely
+requires more familiarity with the graphic to be able to understand what
+is going on than the simple bar chart.
+
+Question 18. How many patients are profiled in the OncoPrint graphic?
+
+Answer: 10336 patients
+
+Question 19. This is again a usability question. How easy did you find
+it to use cBioPortal? If I asked the question ‘How many breast cancer
+samples in the MSK-IMPACT Clinical Sequencing Cohort dataset have a RAS
+gene mutation’, would you know how to get the answer? Try it. Can you
+figure it out? Is cBioPortal intuitive without training? Answer:
+
+I have been previously trained in the use of cBioPortal (I did a summer
+internship at MSK), but I remember finding it pretty easy to use even
+the first time I tried to use it. However, it does require a bit of
+exploration to use without training and not everyone likes to take time
+to explore a tool before trying to use it to answer a question. It did
+take me a couple of tries to find the correct view to answer the
+questions (I went back to "modify query", selected the RAS pathway, and
+used the mutations view).
+
+‘How many breast cancer samples in the MSK-IMPACT Clinical Sequencing
+Cohort dataset have a RAS gene mutation?' Answer: 1671 samples have RAS
+gene mutations (some multiple samples) and 1640 patients have these
+mutations.
+
+Now go to the Genomic Data Commons data portal:
+<https://portal.gdc.cancer.gov>
+
+Question 20. Rate the front page based on your scoring criteria.
+
+Clarity vs obscureness : 3 - some of the bars are not easy to see on the
+blue background but otherwise the page is clear.
+
+Simplicity vs complicated : 1 - the page is very simple, especially for
+the amount of information it provides.
+
+Intuitive vs uninterpretable : 2 - the graphics on the page itself are
+very intuitive, but it is not obvious where the data and data displays
+are.
+
+Question 21. Compare the landing page for cBioPortal
+<http://www.cbioportal.org> with the GDC
+<https://portal.gdc.cancer.gov>. Which is more intuitive for you? Why?
+Keep in mind that this is not a right or wrong question. This is an
+opinion. Answer:
+
+I find the cbioportal page more intuitive because it shows you the
+different studies and query options right away rather than making you
+click somewhere to find them like the GDC portal does. However, the
+cbioportal page is also visually much busier and could be overwhelming
+to a first-time user.
+
+Question 22. Select the lung cancer cases. How easy was it to figure out
+how to do that? Answer:
+
+It was easy to do (I clicked on the lung bar of the bar chart and the
+page appeared). There are 5329 cases.
+
+If you can’t figure it out, use this link:
+<https://portal.gdc.cancer.gov/exploration?filters=%7B%22content%22%3A%5B%7B%22content%22%3A%7B%22field%22%3A%22cases.primary_site%22%2C%22value%22%3A%5B%22bronchus%20and%20lung%22%5D%7D%2C%22op%22%3A%22in%22%7D%2C%7B%22content%22%3A%7B%22field%22%3A%22cases.diagnoses.tissue_or_organ_of_origin%22%2C%22value%22%3A%5B%22lower%20lobe%2C%20lung%22%2C%22lung%2C%20nos%22%2C%22main%20bronchus%22%2C%22middle%20lobe%2C%20lung%22%2C%22overlapping%20lesion%20of%20lung%22%2C%22upper%20lobe%2C%20lung%22%5D%7D%2C%22op%22%3A%22in%22%7D%5D%2C%22op%22%3A%22and%22%7D>
+
+This page is very different than the splash screen. Notice the left
+panel is a faceted search selection. Select the FM Program. Notice that
+the project pie graph changed.
+
+Question 23. Is it obvious what each slice of the Disease Type pie graph
+represents? Answer:
+
+It is not obvious, it makes you mouse over it and it can be hard to get
+your mouse on the tiny little slivers. Would be nice if they had a key
+as well.
+
+Click on the FM-AD project selection. Note the long bread crumb, which
+should look like this:
+
+![](images/clipboard-869368036.png)
+
+Question 24. Is the bread crumb intuitive to you? Answer:
+
+The bread crumb is somewhat intuitive as it uses common search/logical
+terms (IN, IS, AND).
+
+Question 25. Does the bread crumb help you understand where you are?
+Answer:
+
+It does help me understand where I am because it shows me what "search
+terms" I've selected.
+
+Question 26. How many lung cancer cases are in FM? Answer:
+
+Only allows for "bronchus and lung" of which there are 3769 cases.
+
+Bonus Question. What does FM or FM-AD stand for? Answer:
+
+FM-AD stands for "Foundation Medicine Adult Cancer Clinical Dataset" ,
+so FM likely stands for "Foundation Medicine".
+
+End of Homework 1.

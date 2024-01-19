@@ -1,0 +1,17 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+Homework1.docx
+.Rprofile
+CaseStudies824.Rproj
+renv.lock
+images/clipboard-869368036.png
+images/clipboard-2849592734.png
+images/clipboard-3569415672.png
+renv/activate.R
+renv/settings.json
+*.docx
+*.png
+*.pdf
+*.jpg
